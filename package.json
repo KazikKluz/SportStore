@@ -22,7 +22,7 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "npm-run-all --parallel reactstart wevservice",
+    "start": "npm-run-all --parallel reactstart webservice",
     "reactstart": "react-scripts start",
     "webservice": "node server.js",
     "build": "react-scripts build",
