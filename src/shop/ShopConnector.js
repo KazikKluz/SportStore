@@ -15,7 +15,7 @@ const filterProducts = (products = [], category) =>
       );
 
 class ShopConnector extends Component {
-componentDidMount() {
+  componentDidMount() {
     this.props.loadData(DataTypes.CATEGORIES);
     this.props.loadData(DataTypes.PRODUCTS);
   }
@@ -39,8 +39,6 @@ componentDidMount() {
       </Switch>
     );
   }
-
-  
 }
 
 const mapStateToProps = (dataStore) => ({
@@ -51,4 +49,4 @@ const mapDispatchToProps = {
   loadData,
 };
 
-export connect(mapStateToProps, mapDispatchToProps)(ShopConnector);
+export default connect(mapStateToProps, mapDispatchToProps)(ShopConnector);
